@@ -14,6 +14,13 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-UITemplate-UITemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-UITemplate-UITemplateTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C1306317CD1E4A24A577919B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD66F356434EF281F1E02D /* Roboto-Bold.ttf */; };
+		BEC5C691A05A4B33B123EEEE /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F4C0C111176461387BA7A08 /* Roboto-Medium.ttf */; };
+		EBF733F199A647A486279F78 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B770418160D46AAABEB30B3 /* Roboto-Regular.ttf */; };
+		C06FAFE665CB4976A6B085FE /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B681CC918B74620A9563E22 /* WorkSans-Bold.ttf */; };
+		76D64528B5DE4D5AB1D1F4BB /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F74E2369FA6463FBF0CB761 /* WorkSans-Medium.ttf */; };
+		9DB2D56F7DAC4ECEA3871FB4 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCE481F959848B58A5CA180 /* WorkSans-Regular.ttf */; };
+		C76001588FD14BD8BDC6DC8A /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EABED0555FF845E6B96CF35A /* WorkSans-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = UITemplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-UITemplate-UITemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITemplate-UITemplateTests.release.xcconfig"; path = "Target Support Files/Pods-UITemplate-UITemplateTests/Pods-UITemplate-UITemplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		5ABD66F356434EF281F1E02D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../res/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9F4C0C111176461387BA7A08 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../res/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4B770418160D46AAABEB30B3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../res/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0B681CC918B74620A9563E22 /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; name = "WorkSans-Bold.ttf"; path = "../res/fonts/WorkSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6F74E2369FA6463FBF0CB761 /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; name = "WorkSans-Medium.ttf"; path = "../res/fonts/WorkSans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CCCE481F959848B58A5CA180 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; name = "WorkSans-Regular.ttf"; path = "../res/fonts/WorkSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EABED0555FF845E6B96CF35A /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; name = "WorkSans-SemiBold.ttf"; path = "../res/fonts/WorkSans-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +136,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				9F4DD2832734496493990FB2 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +162,21 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		9F4DD2832734496493990FB2 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				5ABD66F356434EF281F1E02D /* Roboto-Bold.ttf */,
+				9F4C0C111176461387BA7A08 /* Roboto-Medium.ttf */,
+				4B770418160D46AAABEB30B3 /* Roboto-Regular.ttf */,
+				0B681CC918B74620A9563E22 /* WorkSans-Bold.ttf */,
+				6F74E2369FA6463FBF0CB761 /* WorkSans-Medium.ttf */,
+				CCCE481F959848B58A5CA180 /* WorkSans-Regular.ttf */,
+				EABED0555FF845E6B96CF35A /* WorkSans-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +274,13 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C1306317CD1E4A24A577919B /* Roboto-Bold.ttf in Resources */,
+				BEC5C691A05A4B33B123EEEE /* Roboto-Medium.ttf in Resources */,
+				EBF733F199A647A486279F78 /* Roboto-Regular.ttf in Resources */,
+				C06FAFE665CB4976A6B085FE /* WorkSans-Bold.ttf in Resources */,
+				76D64528B5DE4D5AB1D1F4BB /* WorkSans-Medium.ttf in Resources */,
+				9DB2D56F7DAC4ECEA3871FB4 /* WorkSans-Regular.ttf in Resources */,
+				C76001588FD14BD8BDC6DC8A /* WorkSans-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
