@@ -11,6 +11,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import {
   DrawerContentComponentProps,
   DrawerContentScrollView,
+  useDrawerProgress,
 } from '@react-navigation/drawer';
 import { DrawerActions } from '@react-navigation/native';
 import Animated, { interpolateNode } from 'react-native-reanimated';
@@ -91,20 +92,23 @@ const getActiveRouteState = (routes: any[], index: number, name: string) =>
   routes[index].name.toLowerCase().indexOf(name.toLowerCase()) >= 0;
 
 const DrawerContent: React.FC<any> = (props) => {
+  const progress = useDrawerProgress();
   const window = useWindowDimensions();
   const rowWidth = (window.width * 0.75 * 80) / 100;
-  const rotate = interpolateNode(props.progress, {
+  const rotate = interpolateNode(progress, {
     inputRange: [0, 1],
     outputRange: [0.3, 0],
   });
-  const scale = interpolateNode(props.progress, {
+  const scale = interpolateNode(progress, {
     inputRange: [0, 1],
     outputRange: [0.9, 1],
   });
-  const translateX = interpolateNode(props.progress, {
+  const translateX = interpolateNode(progress, {
     inputRange: [0, 1],
     outputRange: [-rowWidth, 0],
   });
+
+
 
   return (
     <SafeAreaView edges={['right', 'bottom', 'left']} style={{ flex: 1 }}>

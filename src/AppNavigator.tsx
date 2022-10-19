@@ -28,16 +28,19 @@ const DrawerNavigator: React.FC = () => {
   const window = useWindowDimensions();
   return (
     <Drawer.Navigator
-      drawerContentOptions={{ activeBackgroundColor: '#5cbbff' }}
-      drawerContent={(props) => <DrawerContent {...props} />}
-      drawerType="back"
-      overlayColor="transparent"
-      drawerStyle={{
-        width: window.width * 0.75,
-        backgroundColor: 'rgb(237, 240, 242, 0.5)',
+      useLegacyImplementation
+      screenOptions={{
+        headerShown: false,
+        drawerType: 'back',
+        overlayColor: "transparent",
+        drawerStyle: {
+          width: window.width * 0.75,
+          backgroundColor: 'rgb(237, 240, 242, 0.5)',
+        },
+        sceneContainerStyle: styles.drawerSceneContainer,
+        swipeEdgeWidth: window.width
       }}
-      sceneContainerStyle={styles.drawerSceneContainer}
-      edgeWidth={window.width}
+      drawerContent={(props) => <DrawerContent {...props} activeBackgroundColor='#5cbbff' />}
     >
       <Drawer.Screen name="Home" component={HomeScene} />
       <Drawer.Screen name="Help" component={HelpScene} />
